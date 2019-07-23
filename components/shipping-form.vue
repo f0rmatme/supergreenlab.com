@@ -73,6 +73,11 @@
 
 
 <script>
+
+let stripe = Stripe(`YOUR_STRIPE_PUBLISHABLE_KEY`),
+elements = stripe.elements(),
+card = undefined;
+
 import TextInput from '~/components/shipping-text.vue'
 
 const binding = (name) => ({
@@ -85,6 +90,10 @@ const binding = (name) => ({
 })
 
 export default {
+    //mounted: function () {
+    //card = elements.create('card', style);
+    //card.mount(this.$refs.card);
+  //},
   components: {TextInput, },
   computed: {
     firstname: binding('firstname'),
@@ -99,6 +108,19 @@ export default {
     province: binding('province'),
     zip: binding('zip'),
   },
+}
+
+let style = {
+  base: {
+    border: '1px solid #D8D8D8',
+    borderRadius: '4px',
+    color: "#000",
+  },
+
+  invalid: {
+    // All of the error styles go inside of here.
+  }
+
 }
 </script>
 
