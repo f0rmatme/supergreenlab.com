@@ -15,6 +15,9 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
+    ],
+    script: [
+      { src: 'https://js.stripe.com/v3', type: 'text/javascript' }
     ]
   },
 
