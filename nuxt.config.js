@@ -8,6 +8,7 @@ export default {
   */
   head: {
     title: 'SuperGreenLab - Growshop - Automated LED Grow Lights',
+    script: [{ src: 'https://js.stripe.com/v3/' }],
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -15,9 +16,6 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
-    ],
-    script: [
-      { src: 'https://js.stripe.com/v3', type: 'text/javascript' }
     ]
   },
 

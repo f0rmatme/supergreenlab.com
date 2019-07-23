@@ -71,6 +71,7 @@
   </section>
 </template>
 
+
 <script>
 import TextInput from '~/components/shipping-text.vue'
 
